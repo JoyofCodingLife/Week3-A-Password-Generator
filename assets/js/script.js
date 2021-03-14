@@ -14,10 +14,11 @@ function copyPassword() {
 
 
 // Various Arrays 
-var numeric = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialChar = ["!", "%", "&", ",", "*", "+", "-", ".", "/", "<", ">", "?","~"];
-var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var numericChar = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+var lowerCaseChar = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+var upperCaseChar = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+
 
 // Variable Declaration 
 var confirmLength = "";
@@ -53,8 +54,16 @@ function passwordOptions () {
         var confirmLowerCase = confirm ("Click OK to confirm if you would like to include LOWERCASE characters");
         var confirmUpperCase = confirm ("Click OK to confirm if you would like to include UPPERCASE characters");
       }
-}
 
+  var passwordOptions = {
+    includeSpecialChar: confirmSpecialCharacter,
+    includeNumeric: confirmNumericCharacter,
+    includeLowerCase: confirmLowerCase,
+    includeUpperCase: confirmUpperCase
+  }
+
+  return passwordOptions;
+}
 
 // Password Generator
 function generatePassword() {
@@ -62,6 +71,20 @@ function generatePassword() {
   var options = passwordOptions();
   console.log(options);
 
+  var passwordCharacters = [];
+  console.log(passwordCharacters)
+
+  if (options.includeSpecialChar) {passwordCharacters =  passwordCharacters.concat(specialChar)}
+  if (options.includeNumeric) {passwordCharacters =  passwordCharacters.concat(numericChar)}
+  if (options.includeLowerCase) {passwordCharacters =  passwordCharacters.concat(lowerCaseChar)}
+  if (options.includeUpperCase) {passwordCharacters =  passwordCharacters.concat(upperCaseChar)}
+
+  var randomPassword = []
+   for (var i = 0; i < confirmLength; i++){
+     randomPassword = randomPassword + passwordCharacters [Math.floor(Math.random() * passwordCharacters.length)];
+     console.log(randomPassword)
+   } 
+   return randomPassword.join('');
 }
 
 // Display password to the #password input
