@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Scaling items to screen to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <!-- Style link to reset and style the way I design it-->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+
+    <!-- Container with all the content -->
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+
+      <!-- Content area -->
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+
+        <!-- Container with generated password -->
+        <div class="card-body">
+          <textarea
+            readonly id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+
+        <div class="card-footer">
+          <!-- Generate Password Button-->
+          <button id="generate" class="btn">Generate Password</button>
+          <!-- Generate Password Button-->
+          <button id="copy" class="btn">Copy Password</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    
+    <script src="script.js"></script>
+  </body>
+
+</html>
