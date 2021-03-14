@@ -1,3 +1,14 @@
+/* IMPORT OF FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lato&display=swap');
+
+/* LIST OF FONTS
+regular style
+font-family: 'Lato', sans-serif;
+standout style
+font-family: 'Caveat', cursive;
+
+*/
+
 *,
 *::before,
 *::after {
@@ -13,9 +24,14 @@ body,
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   background-color: #f9fbfd;
   margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
 }
 
 .wrapper {
@@ -81,10 +97,11 @@ header {
     0px;
   color: hsl(0, 0%, 100%);
   display: inline-block;
-  font-size: 22px;
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
   line-height: 22px;
-  margin: 16px 16px 16px 20px;
-  padding: 14px 34px;
+  margin: 15px 0px 0px 15px;
+  padding: 15px 65px;
   text-align: center;
   cursor: pointer;
 }
@@ -138,9 +155,11 @@ button[disabled] {
       width: 100%;
   }
   .btn {
-    font-size: 1rem;
-    margin: 16px 0px 0px 0px;
-    padding: 10px 15px;
+    font-size: 1.5rem;
+    margin: 16px auto 0px;
+    padding: 10px 10px;
+    display: block;
+    width: 100%;
   }
   #password {
     font-size: 1rem;

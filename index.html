@@ -3,30 +3,29 @@
 
   <head>
     <meta charset="UTF-8" />
-    <!-- Scaling items to screen to make website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
-    <!-- Style link to reset and style the way I design it-->
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/1228d6a68f.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
 
-    <!-- Container with all the content -->
+    <!-- Main Container -->
     <div class="wrapper">
       <header>
-        <h1>Password Generator</h1>
+        <h1>PASSWORD GENERATOR</h1>
       </header>
 
-      <!-- Content area -->
+      <!-- Content Area -->
       <div class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
 
-        <!-- Container with generated password -->
+        <!-- Container with Generated Password -->
         <div class="card-body">
           <textarea
             readonly id="password"
@@ -36,17 +35,19 @@
         </div>
 
         <div class="card-footer">
-          <!-- Generate Password Button-->
-          <button id="generate" class="btn">Generate Password</button>
-          <!-- Generate Password Button-->
-          <button id="copy" class="btn">Copy Password</button>
+          <!-- Generate Password Button -->
+          <button id="generate" class="btn"><i class="fas fa-key"></i> Generate</button>
+          <!-- Copy Button -->
+          <button id="copy" class="btn"><i class="far fa-copy"></i> Copy</button>
+          <!-- Reset Button -->
+          <button id="reset" class="btn" type="submit" onclick="resetPassword"><i class="fas fa-redo"></i> Reset</button>
         </div>
 
       </div>
 
     </div>
 
-
+   <!-- JavaScript File -->
     <script src="assets/js/script.js"></script>
   </body>
 
