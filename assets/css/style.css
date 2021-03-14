@@ -9,6 +9,8 @@ font-family: 'Caveat', cursive;
 
 */
 
+
+/* Global Styles */
 *,
 *::before,
 *::after {
@@ -23,15 +25,11 @@ body,
   padding: 0;
 }
 
+/* Main Section Styles */
 body {
   font-family: 'Lato', sans-serif;
   background-color: #f9fbfd;
   margin: 0 auto;
-}
-
-h1 {
-  font-family: 'Caveat', cursive;
-  font-size: 40px;
 }
 
 .wrapper {
@@ -47,6 +45,12 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 40px;
+}
+
+/* Content Area Styles */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -89,6 +93,7 @@ header {
   clear: both;
 }
 
+/* Button Styles */
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -116,6 +121,7 @@ button[disabled] {
   background: #c0c7cf;
 }
 
+/* Style for Generated Password  */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;

@@ -33,18 +33,18 @@ function generatePassword() {
     alert ("Your passwold will have " + confirmLength + " characters");
 
  // Promts to select characters 
-  var confirmSpecialCharacter = confirm("Click OK to include special characters");
-  var confirmNumeric = confirm("Click OK to include numeric characters");    
-  var confirmLowerCase = confirm("Click OK to include lowercase characters");
-  var confirmUpperCase = confirm("Click OK to include uppercase characters");
+  var confirmSpecialCharacter = confirm("Click OK to include SPECIAL characters");
+  var confirmNumeric = confirm("Click OK to include NUMERIC characters");    
+  var confirmLowerCase = confirm("Click OK to include LOWERCASE characters");
+  var confirmUpperCase = confirm("Click OK to include UPPERCASE characters");
 
     // Loop if all 4 parameters are negative
       if (!confirmSpecialCharacter && !confirmNumeric && !confirmLowerCase && !confirmUpperCase){
       alert ("You must choose at least one parameter");
-        var confirmSpecialCharacter = confirm("Click OK to include special characters");
-        var confirmNumeric = confirm("Click OK to include numeric characters");    
-        var confirmLowerCase = confirm("Click OK to include lowercase characters");
-        var confirmUpperCase = confirm("Click OK to include uppercase characters");
+         var confirmSpecialCharacter = confirm("Click OK to include SPECIAL characters");
+         var confirmNumeric = confirm("Click OK to include NUMERIC characters");    
+         var confirmLowerCase = confirm("Click OK to include LOWERCASE characters");
+         var confirmUpperCase = confirm("Click OK to include UPPERCASE characters");
       }   
 
  // Password characters combination
