@@ -15,6 +15,7 @@ body,
 body {
   font-family: sans-serif;
   background-color: #f9fbfd;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -88,13 +89,14 @@ header {
   cursor: pointer;
 }
 
+/* Added change of color to button when cursor is over it  for easier visual presentation */
+button:hover {
+  background-color: rgb(20, 145, 97);
+}
+
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
-}
-
-.float-right {
-  float: right;
 }
 
 #password {
@@ -118,20 +120,33 @@ button[disabled] {
   overflow: hidden;
 }
 
+/* Media Query Styles */
+@media screen and (max-width: 980px) {
+  body {
+      max-width: 980px;
+  }   
+  .wrapper {
+      width: 100%;
+      }
+}
+
 @media (max-width: 690px) {
+  body{
+    max-width: 690px;
+  }
+  .wrapper {
+      width: 100%;
+  }
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
   }
-
   #password {
     font-size: 1rem;
   }
-}
-
-@media (max-width: 500px) {
-  .btn {
-    font-size: 0.8rem;
+  #generate {
+     margin-left: 10%;
+     margin-bottom: 10px;
   }
 }
