@@ -21,7 +21,7 @@ The applicatation runs in any browser and adapts to multiple screen sizes. It fe
 <br>
 
 ### Live URL
-https://joyofcodinglife.github.io/Week3-A-Password-Generator/
+https://korolyovalara.github.io/Password-Generator/
 
 <br>
 
